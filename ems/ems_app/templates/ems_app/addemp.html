@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>add an employee</title>
+  </head>
+  <body>
+  <div class="container">
+    <h1>add an employee</h1>
+    <hr>
+
+
+  <form action="/addemp" method="post">
+    {% csrf_token %}
+
+<!--    <label for="first_name">first name</label>-->
+    <input type="first_name" class="form-control" name="first_name" id="first_name" value="{{first_name}}" aria-describedby="emailHelp" placeholder="first name">
+<!--    <label for="last_name">last name</label>-->
+    <input type="last_name" class="form-control" name="last_name" id="last_name" value="{{last_name}}" aria-describedby="emailHelp" placeholder="last name">
+<!--    <label for="dept">department</label>-->
+    <input type="department" class="form-control" name="dept" id="dept" value="{{dept}}" aria-describedby="emailHelp" placeholder="department">
+<!--    <label for="salary">salary</label>-->
+    <input type="salary" class="form-control" name="salary" id="salary" value="{{salary}}" aria-describedby="emailHelp" placeholder="salary">
+<!--    <label for="bonus">bonus</label>-->
+    <input type="bonus" class="form-control" name="bonus" id="bonus"value="{{bonus}}"  aria-describedby="emailHelp" placeholder="bonus">
+<!--    <label for="role">role</label>-->
+    <input type="role" class="form-control" name="role" id="role" value="{{role}}" aria-describedby="emailHelp" placeholder="role">
+<!--    <label for="phone">phone</label>-->
+    <input type="phone" class="form-control" name="phone" id="phone"value="{{phone}}" aria-describedby="emailHelp" placeholder="phone">
+<!--    <label for="hire_date">hire_date</label>-->
+    <input type="hire_date" class="form-control" name="hire_date" id="hire_date" value="{{hire_date}}"aria-describedby="emailHelp" placeholder="hire date">
+    <hr>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+
+
+</form>
+
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
